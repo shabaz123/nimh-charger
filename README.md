@@ -12,12 +12,12 @@ The Gerber files zip folder can be uploaded to any PCB manufacturer website to h
 * Simple to build, only 'jellybean' components are used
 * Uses a 0.1C charging rate
 * Rotary control to select the charging current to match the battery capacity (20-30 mA, corresponding to 200 mAH to 300 mAH)
-* Built-in over-temperature cut-out
+* Built-in over-temperature charge pause, until the temperature decreases again
 * Automatically stops charging after 19 hours
 * Optional microcontroller interface (a microcontroller is not required)
 
 ## Operation
-This charger uses a low current (0.1 C) charge rate (see Technical Note below). Insert a PP3 NiMH battery, and the charging light should turn on. Rotate the control knob to select the desired charge current to suit batteries labeled 200 mAH to 300 mAH. After nineteen (19) hours, the 'charge complete' LED should switch on, and the charger will stop charging automatically.
+This charger uses a low current (0.1 C) charge rate (see Technical Note below). Insert the NiMH battery, and the charging light should turn on. Rotate the control knob to select the desired charge current to suit batteries labeled 200 mAH to 300 mAH. After nineteen (19) hours, the 'charge complete' LED should switch on, and the charger will stop charging automatically.
 If the battery temperature rises, the charging will pause, and the LED labeled HOT will light up. This light should never light up under normal use, because the charge current is so low.
 
 After the charge time is complete (19 hours), if you wish to charge another battery, insert it, and then power-cycle the charger for the charging to begin again, for another 19 hours.
