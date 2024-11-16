@@ -1,8 +1,10 @@
 # NiMH Charger
 
-This respository contains a design for a 9V PP3 charger for Nickel Metal Hydride (Ni-MH or NiMH) batteries.
+This respository contains a design for a battery charger for Nickel Metal Hydride (Ni-MH or NiMH) batteries.
 
-This is unsuitable for any other type of battery. Ony Nickel Metal-Hydride is supported.
+This is unsuitable for any other type of battery chemistry. Ony Nickel Metal-Hydride is supported.
+
+I have only tested this with 9V PP3 Ni-MH batteries, but it should work with other Ni-MH batteries too (you may need to change resistor values if you need to charge at a different current; consult your battery datasheet).
 
 The Gerber files zip folder can be uploaded to any PCB manufacturer website to have a printed circuit board (PCB) manufactured.
 
@@ -15,10 +17,14 @@ The Gerber files zip folder can be uploaded to any PCB manufacturer website to h
 * Optional microcontroller interface (a microcontroller is not required)
 
 ## Operation
-This charger uses a low current (0.1 C) charge rate. Insert a PP3 NiMH battery, and the charging light should turn on. Rotate the control knob to select the desired charge current to suit batteries labeled 200 mAH to 300 mAH. After nineteen (19) hours, the 'charge complete' LED should switch on, and the charger will stop charging automatically.
+This charger uses a low current (0.1 C) charge rate (see Technical Note below). Insert a PP3 NiMH battery, and the charging light should turn on. Rotate the control knob to select the desired charge current to suit batteries labeled 200 mAH to 300 mAH. After nineteen (19) hours, the 'charge complete' LED should switch on, and the charger will stop charging automatically.
 If the battery temperature rises, the charging will pause, and the LED labeled HOT will light up. This light should never light up under normal use, because the charge current is so low.
 
 After the charge time is complete (19 hours), if you wish to charge another battery, insert it, and then power-cycle the charger for the charging to begin again, for another 19 hours.
 
+## Technical Note
+Consult the battery manufacturer datasheet or white paper to confirm that the charging method is suitable. This project relies on the following note within a GP Technical Paper:
+
+>Apart from fast charging, GP NiMH batteries can also be charged at a lower current rate of 0.1C. As this charging method is less severe, charge termination at 160% nominal capacity input is recommended (to help avoid extended overcharging of the battery). Also, in some applications where overcharging is necessary, GP NiMH batteries can endure 0.1C continuous charging for about one year.
 
 
