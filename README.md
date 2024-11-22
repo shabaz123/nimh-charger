@@ -27,4 +27,11 @@ Consult the battery manufacturer datasheet or white paper to confirm that the ch
 
 >Apart from fast charging, GP NiMH batteries can also be charged at a lower current rate of 0.1C. As this charging method is less severe, charge termination at 160% nominal capacity input is recommended (to help avoid extended overcharging of the battery). Also, in some applications where overcharging is necessary, GP NiMH batteries can endure 0.1C continuous charging for about one year.
 
+## Files
+There are two different PCBs, Type 1 and Type 2.
+
+Type 1 contains a PP3 battery holder. See the file [nimh-charger-gerbers-rev1-1.zip](nimh-charger-gerbers-rev1-1.zip) for the Gerber files for Type 1. The schematic is in nimh-pp3-charger-schematic-rev1.pdf
+
+Type 2 omits the battery holder, so that a NiMH battery can be attached using a cable with any desired connector. The components are uprated, to support charging for higher capacity batteries compared to PP3. The Gerber files are in export-nimh-charger-gerbers-rev1-1.zip and the schematic is in nimh-charger-rev1-1-schematic.pdf
+
 
