@@ -30,8 +30,8 @@ Consult the battery manufacturer datasheet or white paper to confirm that the ch
 ## Files
 There are two different PCBs, Type 1 and Type 2.
 
-Type 1 contains a PP3 battery holder. See the file [nimh-charger-gerbers-rev1-1.zip](nimh-charger-gerbers-rev1-1.zip) for the Gerber files for Type 1. The schematic is in nimh-pp3-charger-schematic-rev1.pdf
+Type 1 contains a PP3 battery holder. See the file [nimh-charger-gerbers-rev1-1.zip](nimh-charger-gerbers-rev1-1.zip) for the Gerber files for Type 1. The schematic is in [nimh-pp3-charger-schematic-rev1.pdf](nimh-pp3-charger-schematic-rev1.pdf)
 
-Type 2 omits the battery holder, so that a NiMH battery can be attached using a cable with any desired connector. The components are uprated, to support charging for higher capacity batteries compared to PP3. The Gerber files are in export-nimh-charger-gerbers-rev1-1.zip and the schematic is in nimh-charger-rev1-1-schematic.pdf
+Type 2 omits the battery holder, so that a NiMH battery can be attached using a cable with any desired connector. The components are uprated, to support charging for higher capacity batteries compared to PP3. The Gerber files are in [export-nimh-charger-gerbers-rev1-1.zip](export-nimh-charger-gerbers-rev1-1.zip) and the schematic is in [nimh-charger-rev1-1-schematic.pdf](nimh-charger-rev1-1-schematic.pdf)
 
 
